@@ -1,0 +1,10 @@
+__pycache__
+
+api-python/settings.py
+api-python/__pycache__/*
+
+objectapi/__pycache__/*
+objectapi/migrations/*
+
+userapi/__pycache__/*
+userapi/migrations/*
