@@ -8,16 +8,13 @@
 from django.db import models
 
 
-class User(models.Model):
-    id_user = models.AutoField(primary_key=True)
-    name = models.TextField()
-    firstname = models.TextField()
-    address = models.CharField(max_length=100)
-    mail = models.TextField(unique=True)
+class State(models.Model):
+    id_state = models.AutoField(primary_key=True)
+    title = models.TextField()
 
     class Meta:
         managed = False
-        db_table = 'User'
-    
+        db_table = 'State'
+
     def __str__(self):
-        return "{} - {} - {} - {} - {}".format(self.id_user, self.name, self.firstname, self.address, self.mail)
+        return "{} - {}".format(self.id_state, self.title)

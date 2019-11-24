@@ -3,8 +3,15 @@ __pycache__
 api-python/settings.py
 api-python/__pycache__/*
 
-objectapi/__pycache__/*
-objectapi/migrations/*
-
 userapi/__pycache__/*
 userapi/migrations/*
+
+iotstateapi/__pycache__/*
+iotstateapi/migrations/*
+
+equipmentapi/__pycache__/*
+equipmentapi/migrations/*
+
+notificationapi/__pycache__/*
+notificationapi/migrations/*
+

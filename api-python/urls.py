@@ -20,4 +20,7 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('userapi.urls')),
+    path('state/', include('iotstateapi.urls')),
+    path('equipment/', include('equipmentapi.urls')),
+    path('notification/', include('notificationapi.urls')),
 ]
