@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    build: sql/.
+    ports:
+      - "5432:5432"
+    networks:
+      new:
+        aliases:
+          - database
+          - db
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - new
+
+networks:
+  new:
+    driver: bridge
+    
