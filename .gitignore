@@ -1,6 +1,5 @@
 __pycache__
 
-api-python/settings.py
 api-python/__pycache__/*
 
 userapi/__pycache__/*
